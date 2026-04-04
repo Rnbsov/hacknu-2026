@@ -1,0 +1,66 @@
+parameters:
+  coolant_temp:
+    weight: 0.15
+    optimal: [75, 90]
+    warning: [65, 100]
+    critical: [50, 115]
+    unit: "°C"
+  oil_pressure:
+    weight: 0.12
+    optimal: [3.5, 5.5]
+    warning: [2.5, 6.5]
+    critical: [1.5, 8.0]
+    unit: "bar"
+  vibration:
+    weight: 0.13
+    optimal: [0, 5.0]
+    warning: [0, 10.0]
+    critical: [0, 15.0]
+    unit: "mm/s"
+  speed:
+    weight: 0.08
+    optimal: [0, 140]
+    warning: [0, 160]
+    critical: [0, 180]
+    unit: "km/h"
+  rpm:
+    weight: 0.10
+    optimal: [600, 2200]
+    warning: [400, 2600]
+    critical: [200, 3000]
+    unit: "RPM"
+  fuel_level:
+    weight: 0.08
+    optimal: [30, 100]
+    warning: [15, 100]
+    critical: [5, 100]
+    unit: "%"
+  brake_pressure:
+    weight: 0.12
+    optimal: [4.0, 8.0]
+    warning: [2.5, 9.5]
+    critical: [1.0, 11.0]
+    unit: "bar"
+  voltage:
+    weight: 0.10
+    optimal: [540, 620]
+    warning: [480, 680]
+    critical: [420, 750]
+    unit: "V"
+  current:
+    weight: 0.07
+    optimal: [100, 800]
+    warning: [50, 1100]
+    critical: [0, 1400]
+    unit: "A"
+  axle_load:
+    weight: 0.05
+    optimal: [18, 22]
+    warning: [15, 24]
+    critical: [12, 25]
+    unit: "tons"
+
+alert_penalty:
+  info: 2
+  warning: 5
+  critical: 15
